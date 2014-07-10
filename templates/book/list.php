@@ -1,0 +1,1 @@
+<p>This page lists all books.</p>
