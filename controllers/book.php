@@ -1,19 +1,21 @@
 <?php
 
-class Book extends \MVC\Controller {
+use \MVC\Controller;
+
+class Book extends Controller {
 	
 	protected $model = [
 		1 => [
-			'author'  => 'Stanis³aw Lem',
-			'title'   => 'Niezwyciê¿ony',
+			'author'  => 'StanisÅ‚aw Lem',
+			'title'   => 'NiezwyciÄ™Å¼ony',
 		],
 		2 => [
 			'author'  => 'Jacek Dukaj',
-			'title'   => 'Inne Pieœni',
+			'title'   => 'Inne PieÅ›ni',
 		],
 		3 => [
 			'author'  => 'Jacek Dukaj',
-			'title'   => 'Lód',
+			'title'   => 'LÃ³d',
 		],
 	];
 	
@@ -22,7 +24,7 @@ class Book extends \MVC\Controller {
 	}
 	
 	function list_action(){
-		echo "This page lists all books.";
+		return ['books' => $this->model];
 	}
 	
 	function show($id){
@@ -38,7 +40,7 @@ class Book extends \MVC\Controller {
 		echo
 			"<table>" .
 			"<tr><td>autor:</td><td>$author</td></tr>" .
-			"<tr><td>tytu³:</td><td>$title</td></tr>" .
+			"<tr><td>tytuÂ³:</td><td>$title</td></tr>" .
 			"</table>";
 	}
 	
