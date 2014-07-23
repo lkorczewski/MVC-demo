@@ -1,0 +1,12 @@
+{
+	"name": "lkorczewski/MVC-demo",
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/lkorczewski/core"
+		}
+	],
+	"require": {
+		"lkorczewski/core" : "*"
+	}
+}
