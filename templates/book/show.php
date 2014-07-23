@@ -1,3 +1,4 @@
+<?php $this->extend( __DIR__ . '../index'); ?>
 <table>
 <tr><td>author:</td><td><?php echo $this->author; ?></td></tr>
 <tr><td>title:</td><td><?php echo $this->get('title'); ?></td></tr>
