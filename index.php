@@ -15,7 +15,7 @@ require_once __DIR__ . '/../../library/core/autoloader.php';
 use \Core\Autoloader;
 
 Autoloader::register(__DIR__ . '/../../library');
-Autoloader::register(__DIR__);
+//Autoloader::register(__DIR__ . '/..');
 
 //------------------------------------------------
 // config
@@ -26,10 +26,10 @@ require_once __DIR__ . '/config.php';
 //------------------------------------------------
 // dependencies
 //------------------------------------------------
-
-use \Database\Extended_Database;
-
-$database = new Extended_Database();
+//
+//use \Database\Extended_Database;
+//
+//$database = new Extended_Database();
 
 //------------------------------------------------
 // application start
