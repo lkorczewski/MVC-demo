@@ -1,6 +1,8 @@
 <?php
 
-class Error extends \MVC\Controller {
+use \MVC\Controller;
+
+class Error extends Controller {
 	
 	function handle($label){
 		switch($label){
